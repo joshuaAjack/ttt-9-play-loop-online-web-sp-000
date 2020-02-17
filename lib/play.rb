@@ -35,11 +35,7 @@ def turn(board)
 end
 
 # Define your play method below
-def play(board)
-index = 0
-while  index < 9
- index += 1
-    play(board)
-    turn.add
+def move(board, index, player = "X")
+  board[index] = player
 end
 end
